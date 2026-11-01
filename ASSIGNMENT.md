@@ -46,7 +46,7 @@ my-email-studio/
 
 **No brand of your own?** Use the sample: Kettlebird Tea, a made-up tea shop launching a monthly tea box called The Steep Club. The prompts below use it.
 
-0 of 15 done
+2 of 15 done
 
 #### Part 1 · Plan and write
 
@@ -128,7 +128,7 @@ The exam asks the same question about MCP servers: for a standard need, use an e
 
 Install a plugin for this project only, and write the studio's CLAUDE.md.
 
-[ ] Done
+[x] Done
 
 **In plain words:** CLAUDE.md is the studio's notice board. Claude reads it every time it starts work here. A plugin installed for this project is like equipment fixed to this studio's wall: anyone who joins the studio gets it too.
 

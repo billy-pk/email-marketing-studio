@@ -1,6 +1,6 @@
 # Email Marketing Studio
 
-This studio plans and writes email campaigns for a small business. The sample brand is Kettlebird Tea, a made-up tea shop launching a monthly tea box called The Steep Club.
+This studio plans and writes email campaigns to market a book, *The AI Agent Factory* (Panaversity). The book teaches people who use AI in their workflows to assign, govern, and manage an AI Worker. Book intro: https://agentfactory2.panaversity.org/five-horizons
 
 ## Folders
 
@@ -14,3 +14,5 @@ This studio plans and writes email campaigns for a small business. The sample br
 - Write in plain English.
 - Never send email to real people.
 - Ask me before deleting anything.
+
+@brand/voice.md

@@ -30,11 +30,11 @@ Voice and claim rules: follow `brand/voice.md` for every email in this plan.
 
 ## 3. Key messages
 
-**Core message:** The book is ready to read. Start with Horizon 1, where you assign, govern, and manage an AI Worker.
+**Core message:** The book is open to read, and chapters are published as each one is approved. Start with Horizon 1, where you assign, govern, and manage an AI Worker.
 
 **Supporting messages:**
 1. **Clear:** The book explains how people's work with AI is moving from prompting toward assigning an AI a role.
-2. **Practical:** Horizon 1 is where we are now. Learning to manage one AI Worker well is the base for everything after it.
+2. **Practical:** Horizon 1 is where we are now. The book argues that learning to manage one AI Worker well is the base for what comes after.
 3. **Honest:** Later horizons are forecasts, and the book says so. Humans set purpose, define authority, and stay accountable.
 4. **Easy to begin:** It is free to read on the web. One short read is enough to start, and the intro page is the way in.
 5. **Honest about release:** Chapters are published as each one is approved, so we say what is available now and never imply the whole book is live.
@@ -55,15 +55,15 @@ No paid ads, social, or PR in this plan. The book's intro page, `https://agentfa
 
 Campaign window: **Mon 7 Dec 2026 to Sun 3 Jan 2027**. Seven emails, sent in the audience's morning. Send time is a choice for you to confirm, because we have no timezone data.
 
-| Week | Date | Email | Goal | Notes |
-|---|---|---|---|---|
-| 1 | Mon 7 Dec | E1: The book is open to read | Announce, say chapters are published as approved, get the first click | Send to all |
-| 1 | Thu 10 Dec | E2: What Horizon 1 means | Explain the core idea | Skip anyone who already started reading |
-| 2 | Tue 15 Dec | E3: Pick your route | Three links: new to AI (Part 0), delegating to AI (Part II), building with AI (Part III). Also explains assign, govern, manage | Skip readers. The click sets the segment |
-| 2 | Fri 18 Dec | E4: One honest limit | Say what the book does not promise and show what a chapter holds (lessons, lab, quiz) | Skip readers; send the route link each person chose, or all three to non-clickers |
-| 3 | Tue 22 Dec | E5: Read one section | Make starting feel small | Short. Last email before the holidays |
-| 4 | Tue 29 Dec | E6: Pick it up again | Re-engage non-readers | Skip readers |
-| 4 | Sat 2 Jan | E7: A last note from us | Final invitation, no pressure | Skip readers |
+| Week | Date | Email | Audience | Goal | Notes |
+|---|---|---|---|---|---|
+| 1 | Mon 7 Dec | E1: The book is open to read | All waitlist | Announce, say chapters are published as approved, get the first click | Send to all |
+| 1 | Thu 10 Dec | E2: What Horizon 1 means | Waitlist non-readers | Explain the core idea | Skip anyone who already started reading |
+| 2 | Tue 15 Dec | E3: Pick your route | Waitlist non-readers | Three links: new to AI (Part 0), delegating to AI (Part II), building with AI (Part III). Also explains assign, govern, manage | Skip readers. The click sets the segment |
+| 2 | Fri 18 Dec | E4: One honest limit | Non-readers, by route clicked in E3 (all three links for non-clickers) | Say what the book does not promise and show what a chapter holds (lessons, lab, quiz) | Skip readers; send the route link each person chose, or all three to non-clickers |
+| 3 | Tue 22 Dec | E5: Read one section | Waitlist non-readers | Make starting feel small | Skip readers. Short. Final email before the holidays |
+| 4 | Tue 29 Dec | E6: Pick it up again | Waitlist non-readers | Re-engage non-readers | Skip readers |
+| 4 | Sat 2 Jan | E7: One more note from us | Waitlist non-readers | Closing invitation, no pressure | Skip readers |
 
 **Readers branch:** once someone starts reading, they leave the "start reading" emails. If you want, they get one separate "keep going" email around E4 (nice-to-have).
 

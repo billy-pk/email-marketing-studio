@@ -46,7 +46,7 @@ my-email-studio/
 
 **No brand of your own?** Use the sample: Kettlebird Tea, a made-up tea shop launching a monthly tea box called The Steep Club. The prompts below use it.
 
-2 of 15 done
+6 of 15 done
 
 #### Part 1 · Plan and write
 
@@ -339,7 +339,7 @@ When prose instructions get misread, give 2–3 input/output examples, not more 
 
 Write a rule that attaches itself to every email file, then write the emails.
 
-[ ] Done
+[x] Done
 
 **In plain words:** a path rule is a sticky note that attaches itself to every email file, in any campaign folder. CLAUDE.md is read for everything. This note shows up only when Claude works on an email.
 

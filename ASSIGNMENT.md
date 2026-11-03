@@ -186,7 +186,7 @@ Team standards go at project level: CLAUDE.md in the repo, `.claude/settings.jso
 
 Let Claude interview you, then keep the voice in its own file that CLAUDE.md imports.
 
-[ ] Done
+[x] Done
 
 **In plain words:** a tailor takes your measurements before cutting the cloth. Here Claude asks first, then writes. The `@brand/voice.md` line is a note pinned to the notice board that says "also read the brand book".
 
@@ -237,7 +237,7 @@ Exam answer: to see which memory files are loaded, use /memory. In today's produ
 
 Use a ready-made skill from the plugin to turn an idea into a full plan.
 
-[ ] Done
+[x] Done
 
 **In plain words:** `/marketing:campaign-plan` is a planning form a marketing team already tested. You fill in the blanks and it builds the structure.
 

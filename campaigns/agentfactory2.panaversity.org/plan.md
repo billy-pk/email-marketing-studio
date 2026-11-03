@@ -19,11 +19,11 @@ Voice and claim rules: follow `brand/voice.md` for every email in this plan.
 
 - **Primary:** about 2,000 people who joined the waitlist. They asked to hear about the book, so they already know it exists. They are in the **consideration to decision** stage.
 - **Who they are:** people who use AI in their daily workflows, from beginners to heavy users. We have no job-title or industry data in this studio, so we do not segment by role.
-- **Segments by reading route (self-selected by click):** the book offers three routes, so we let readers choose rather than guess.
+- **Reading routes (described in E3, chosen on the book's own pages):** the book offers three routes. We describe them in text and do not segment by route, because each email has one link (see `.claude/rules/emails.md`).
   - **New to AI:** start with Part 0, *How AI Works*.
   - **People who delegate work to AI:** start with Part II, *Managing AI Workers*.
   - **People who build with AI:** start with Part III, *Building AI Workers*.
-  - Anyone who clicks a route link in E3 joins that segment for E4 to E7.
+  - Readers pick their route on *How to Use This Book*, reached from the intro page.
 - **Pain points we can speak to** (from the book's own framing): working with AI by prompting alone, unclear who is in charge of an AI's work, and uncertainty about what comes next.
 - **Where they are:** their inbox is the only channel this plan uses.
 - **Secondary audience:** none for this campaign.
@@ -59,8 +59,8 @@ Campaign window: **Mon 7 Dec 2026 to Sun 3 Jan 2027**. Seven emails, sent in the
 |---|---|---|---|---|---|
 | 1 | Mon 7 Dec | E1: The book is open to read | All waitlist | Announce, say chapters are published as approved, get the first click | Send to all |
 | 1 | Thu 10 Dec | E2: What Horizon 1 means | Waitlist non-readers | Explain the core idea | Skip anyone who already started reading |
-| 2 | Tue 15 Dec | E3: Pick your route | Waitlist non-readers | Three links: new to AI (Part 0), delegating to AI (Part II), building with AI (Part III). Also explains assign, govern, manage | Skip readers. The click sets the segment |
-| 2 | Fri 18 Dec | E4: One honest limit | Non-readers, by route clicked in E3 (all three links for non-clickers) | Say what the book does not promise and show what a chapter holds (lessons, lab, quiz) | Skip readers; send the route link each person chose, or all three to non-clickers |
+| 2 | Tue 15 Dec | E3: Pick your route | Waitlist non-readers | Describe the three routes in text: new to AI (Part 0), delegating to AI (Part II), building with AI (Part III). Also explains assign, govern, manage | Skip readers. One button to the intro page; no route links |
+| 2 | Fri 18 Dec | E4: One honest limit | Waitlist non-readers | Say what the book does not promise and show what a chapter holds (lessons, lab, quiz) | Skip readers. One button to the intro page |
 | 3 | Tue 22 Dec | E5: Read one section | Waitlist non-readers | Make starting feel small | Skip readers. Short. Final email before the holidays |
 | 4 | Tue 29 Dec | E6: Pick it up again | Waitlist non-readers | Re-engage non-readers | Skip readers |
 | 4 | Sat 2 Jan | E7: One more note from us | Waitlist non-readers | Closing invitation, no pressure | Skip readers |
@@ -79,20 +79,18 @@ Campaign window: **Mon 7 Dec 2026 to Sun 3 Jan 2027**. Seven emails, sent in the
 | Asset | Description | Priority | Draft by |
 |---|---|---|---|
 | E1 to E7 emails | Subject line, preview text, body, sign-off per `brand/voice.md` | Must-have | E1 by 27 Nov, the rest by 4 Dec |
-| "Keep going" email for readers | Short thank-you with the next chapter link | Nice-to-have | 11 Dec |
+| "Keep going" email for readers | Short thank-you with one button to the intro page, where readers choose their route | Nice-to-have | 11 Dec |
 | Unsubscribe and preference text | Plain, one click | Must-have | 27 Nov |
 | Tracked links | One link per email, with a campaign tag | Must-have | 27 Nov |
 | Plain-text versions | For every email | Must-have | With each draft |
 
-Every email ends with the sign-off from the voice guide: the closing line, "The AI Agent Factory team", and the intro link.
+Every email follows `.claude/rules/emails.md`: a subject of 50 characters or fewer, preview text of 90 or fewer, a `{{first_name}}` greeting, exactly one button link to the intro page, the sign-off from the voice guide, and the two-line footer.
 
 ## 7. Success metrics
 
 **Primary KPI:** **300 unique waitlist members start reading** by 3 Jan 2027.
 
 **How it is tracked:** this still needs your input. The book site's analytics are unknown to me. The best method is a unique link per recipient, so a click maps to one person. Because the book is a web resource, a start is the unique visit to `/how-to-use-this-book` or `/preface` from our link. If the site can only count page visits, we use a campaign-tagged link and count unique visitors, which will overstate readers. Please confirm what the site can measure.
-
-**Added secondary KPI:** clicks per reading route (Part 0, Part II, Part III) from E3, to learn which audience responds.
 
 **The math behind 300:**
 - 300 ÷ 2,000 = **15% of the list**.

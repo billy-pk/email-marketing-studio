@@ -20,6 +20,7 @@ Every email file must follow these rules.
 
 - Use exactly one main link, written as `[Button text](https://agentfactory2.panaversity.org/five-horizons)`.
 - Change the button text to fit the email. Do not change the address.
+- The link in the sign-off from `brand/voice.md` does not count toward this. So each email has one button link plus the sign-off link, and no other links.
 
 ## Ending
 

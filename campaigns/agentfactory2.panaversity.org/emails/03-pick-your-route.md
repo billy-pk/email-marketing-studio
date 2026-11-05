@@ -11,7 +11,7 @@ You do not have to read the book from page one. It offers three routes, and you 
 
 Whichever route you pick, the same three jobs run through the book: assign, govern, and manage an AI Worker.
 
-The book is published chapter by chapter as each one is approved. Some parts may not be live yet, so check what is available when you arrive.
+Some parts may not be live yet, so check what is available when you arrive.
 
 The introduction links to *How to Use This Book*. Begin there and pick a route.
 

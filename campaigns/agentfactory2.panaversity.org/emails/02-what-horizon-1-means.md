@@ -3,7 +3,7 @@ Preview: Horizon 1 is the era we are in now. You assign, govern, and manage an A
 
 Hi {{first_name}},
 
-The book describes AI work in horizons. Horizon 1 is where we are now.
+The book describes the future of AI work in stages called horizons. Horizon 1 is where we are now.
 
 In Horizon 1, a person works with an AI Worker. That means three jobs:
 
@@ -11,13 +11,13 @@ In Horizon 1, a person works with an AI Worker. That means three jobs:
 - **Govern.** Decide what it may and may not do.
 - **Manage.** Check its work and stay accountable for the result.
 
-Humans set the purpose, define the authority, and stay accountable. An AI Worker does not replace that.
+Humans set the purpose, define the authority, and stay accountable. An AI Worker does not take that over.
 
-The book also looks at later horizons. Those are forecasts. The book argues one possible path, and it says so plainly. It does not claim to know what will happen.
+The book also looks at later horizons. Those are forecasts. The book argues for one possible path, and it says so plainly. It does not claim to know what will happen.
 
-Its case for starting now is simple: learning to manage one AI Worker well is the base for whatever comes next.
+Its case for starting now is simple. The book argues that learning to manage one AI Worker well is a sound base for what may come next.
 
-[See what Horizon 1 means](https://agentfactory2.panaversity.org/five-horizons)
+[Read about Horizon 1 in the introduction](https://agentfactory2.panaversity.org/five-horizons)
 
 Start with Horizon 1. Learn to manage one AI Worker well.
 

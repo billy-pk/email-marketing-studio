@@ -3,7 +3,7 @@ Preview: What the book does not promise, and what you find inside a chapter.
 
 Hi {{first_name}},
 
-Here is something we want to say plainly. Reading this book will not guarantee any result. It will not make you an expert, and it cannot promise how much time you will save.
+Here is something we want to say plainly. The book gives no guaranteed results. It will not make you an expert, and it cannot promise how much time you will save.
 
 It also does not say an AI Worker is safe to run alone. The book's view is the opposite: people set the purpose, define the authority, and stay accountable.
 
@@ -19,7 +19,7 @@ Chapters are published as each one is approved, so the book is still growing.
 
 If that sounds useful, the introduction is a short way in.
 
-[Read the introduction](https://agentfactory2.panaversity.org/five-horizons)
+[Take a look at the introduction](https://agentfactory2.panaversity.org/five-horizons)
 
 Start with Horizon 1. Learn to manage one AI Worker well.
 

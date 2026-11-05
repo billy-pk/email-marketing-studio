@@ -12,7 +12,7 @@ This studio plans and writes email campaigns to market a book, *The AI Agent Fac
 ## Rules
 
 - Write in plain English.
-- Never send email to real people.
+- Never send email to real people. Sending through Resend is allowed only to Resend's test addresses (ending in @resend.dev) and to my own email address (bilalirshad735@gmail.com). A guard will enforce this in the next step.
 - Ask me before deleting anything.
 
 @brand/voice.md

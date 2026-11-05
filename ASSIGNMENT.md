@@ -46,7 +46,7 @@ my-email-studio/
 
 **No brand of your own?** Use the sample: Kettlebird Tea, a made-up tea shop launching a monthly tea box called The Steep Club. The prompts below use it.
 
-6 of 15 done
+7 of 15 done
 
 #### Part 1 · Plan and write
 
@@ -414,7 +414,7 @@ For conventions that apply to files spread across folders, use `.claude/rules/` 
 
 Review in a new session, fix related problems in one message, then confirm with search.
 
-[ ] Done
+[x] Done
 
 **In plain words:** when you proofread your own letter, you see what you meant to write. A new session is a second reader who didn't write it.
 

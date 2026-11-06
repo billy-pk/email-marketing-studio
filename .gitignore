@@ -1,3 +1,21 @@
 .claude/settings.local.json
 .DS_Store
 Thumbs.db
+
+# Secrets and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies and logs
+node_modules/
+*.log
+npm-debug.log*
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+*~

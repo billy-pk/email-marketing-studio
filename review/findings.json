@@ -1,0 +1,32 @@
+{
+  "findings": [
+    {
+      "file": "campaigns/agentfactory2.panaversity.org/groups/*/emails/02-what-horizon-1-means.md",
+      "line": 6,
+      "severity": "medium",
+      "problem": "All three group versions dropped the base email's line that explains horizons. They now say 'Horizon 1 is where we are now' without saying what a horizon is. brand/voice.md says to explain any needed term in the same sentence. Building-with-ai also says 'these three jobs' before they are listed.",
+      "fix": "Restore a short explanation, e.g. 'The book describes the future of AI work in stages called horizons.' Put it before 'Horizon 1 is where we are now.' Change 'these three jobs' to 'three jobs', which are listed below."
+    },
+    {
+      "file": "campaigns/agentfactory2.panaversity.org/groups/*/emails/03-pick-your-route.md",
+      "line": 6,
+      "severity": "medium",
+      "problem": "In all three group versions, 'It offers three routes' follows the example sentence. 'It' now points at the part or route just named, not at the book, so the sentence reads wrongly.",
+      "fix": "Change to 'The book offers three routes, and you choose on the page called How to Use This Book.'"
+    },
+    {
+      "file": "campaigns/agentfactory2.panaversity.org/groups/*/emails/04-one-honest-limit.md",
+      "line": 6,
+      "severity": "medium",
+      "problem": "The personalised opener and example are joined straight onto the no-guarantee statement. In building-with-ai, a lab example sits right before 'The book gives no guaranteed results.' In new-to-ai, a first-lab example is followed by the same line. The honest-limit message gets buried and the flow breaks.",
+      "fix": "Put the opener and example in their own paragraph. Then start a new paragraph with 'The book gives no guaranteed results...'."
+    },
+    {
+      "file": "campaigns/agentfactory2.panaversity.org/groups/*/emails/01-book-is-open.md",
+      "line": 6,
+      "severity": "low",
+      "problem": "'Here is the news: the book is open to read' follows an example sentence, so the lead is lost. Delegating-to-ai's 'this book is about doing that with more care' also implies the reader is currently careless.",
+      "fix": "Open with the news first, then add the group line. In delegating-to-ai, reword to something like 'this book is about managing that work well'."
+    }
+  ]
+}

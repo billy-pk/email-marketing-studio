@@ -143,3 +143,5 @@ The book covers certifications, income routes and several AI vendors. These are 
 6. **Launch:** Mon 7 Dec 2026.
 
 **Decisions needed:** tracking method, send timezone, email platform, and whether to add the "keep going" email.
+
+<!-- Test change to trigger the review workflow. Do not merge. -->

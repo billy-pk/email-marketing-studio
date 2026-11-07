@@ -45,8 +45,13 @@ Book introduction: https://agentfactory2.panaversity.org/five-horizons
 ## Getting started
 
 1. Install Node.js 22 or newer, Git, and Claude Code (`npm install -g @anthropic-ai/claude-code`).
-2. Clone this repo and open Claude Code in the folder:
+2. Clone this repo and set up your own Resend key:
    ```bash
-   claude
+   cp .env.example .env
    ```
-3. Ask Claude to plan, write, or personalize a campaign. For example: "Run the personalize skill on the launch campaign."
+   Edit `.env` and add your own `RESEND_API_KEY`. Each person uses their own key. `.env` is gitignored, so it is never committed.
+3. Start Claude Code with the key loaded:
+   ```bash
+   ./start.sh
+   ```
+4. Ask Claude to plan, write, or personalize a campaign. For example: "Run the personalize skill on the launch campaign."

@@ -1,0 +1,67 @@
+name: Review emails
+
+on:
+  pull_request:
+    paths:
+      - "campaigns/**"
+      - "brand/**"
+      - ".claude/rules/**"
+      - "review/findings.schema.json"
+      - "scripts/review.mjs"
+
+permissions:
+  contents: read
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      # Review each campaign the PR touches. If the brand voice, the rules or the
+      # script changed, review every campaign. campaigns/test-bad is a practice
+      # campaign that is bad on purpose, so it is never reviewed here.
+      - name: Review changed campaigns
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          changed=$(git diff --name-only "$BASE_SHA" HEAD)
+          if echo "$changed" | grep -qE '^(brand/|\.claude/rules/|review/findings\.schema\.json|scripts/review\.mjs)'; then
+            folders=$(ls -d campaigns/*/)
+          else
+            folders=$(echo "$changed" | grep '^campaigns/' | cut -d/ -f1-2 | sort -u)
+          fi
+          folders=$(echo "$folders" | sed 's:/$::' | grep -v '^campaigns/test-bad$' | while read -r f; do [ -d "$f" ] && echo "$f"; done || true)
+
+          if [ -z "$folders" ]; then
+            echo "No campaigns to review."
+            exit 0
+          fi
+
+          status=0
+          mkdir -p review/results
+          for folder in $folders; do
+            echo "::group::$folder"
+            node scripts/review.mjs "$folder" || status=$?
+            cp review/findings.json "review/results/$(basename "$folder").json"
+            echo "::endgroup::"
+          done
+          exit $status
+
+      - name: Upload findings
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: review-findings
+          path: review/results/
+          if-no-files-found: ignore

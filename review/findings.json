@@ -3,66 +3,66 @@
   "findings": [
     {
       "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 6,
-      "severity": "high",
-      "problem": "Banned claims remain: '100 % guarantee' (guaranteed result), 'become an expert' (no expert claims), and 'earn more' (income outcome). The 'detox' and 'toxins' wording from the last review is gone, so that part is fixed.",
-      "fix": "Delete the sentence after the first one. Keep only: 'The AI Agent Factory teaches you to assign, govern, and manage an AI Worker.'"
+      "line": 1,
+      "severity": "medium",
+      "problem": "Subject is 57 characters (limit 50). It also uses hype ('amazing book today') and mild urgency.",
+      "fix": "Shorten to 50 characters or fewer and remove hype, e.g. 'Learn to manage one AI Worker well'."
     },
     {
       "file": "campaigns/test-bad/emails/01-bad.md",
       "line": 2,
       "severity": "high",
-      "problem": "Preview text (77 characters, within the 90 limit) still makes a guarantee ('100 % guarantee') and an unsupported claim that readers will 'feel cleaner and lighter at work'.",
-      "fix": "Use a plain preview such as 'A practical start to assigning, governing, and managing an AI Worker.'"
-    },
-    {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 8,
-      "severity": "high",
-      "problem": "'Don't get left behind' is a banned fear/pressure phrase, and 'Only a few copies left!' is fake scarcity.",
-      "fix": "Delete the line."
-    },
-    {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 10,
-      "severity": "high",
-      "problem": "The 'Buy now' button points to https://example.com/buy, which is not the required address. 'Buy now' is also a pressure call to action.",
-      "fix": "Delete this line. Keep a single button to https://agentfactory2.panaversity.org/five-horizons."
-    },
-    {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 11,
-      "severity": "medium",
-      "problem": "The email has two button links where exactly one is allowed. This one has the correct address, but 'Read more' is a vague label.",
-      "fix": "Keep this as the only button and rename it, e.g. [Read the first horizon](https://agentfactory2.panaversity.org/five-horizons). Don't use 'Read the introduction', which is the sign-off link text."
-    },
-    {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 13,
-      "severity": "high",
-      "problem": "The sign-off is incomplete. The closing line 'Start with Horizon 1. Learn to manage one AI Worker well.' and the 'Read the introduction: https://agentfactory2.panaversity.org/five-horizons' link are missing.",
-      "fix": "Use the full sign-off from brand/voice.md section 5."
-    },
-    {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 13,
-      "severity": "high",
-      "problem": "The required two-line plain-text footer is missing (the waitlist line, and the line with {{company_address}} and {{unsubscribe_url}}).",
-      "fix": "Add both footer lines after the sign-off, each on its own line, outside any code block."
-    },
-    {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 1,
-      "severity": "medium",
-      "problem": "The subject is now 57 characters, over the 50 limit. It also uses the hype word 'amazing' and the pressure word 'today'. The 'Detox' wording is gone.",
-      "fix": "Shorten to 50 characters or fewer without hype, e.g. 'Learn to manage one AI Worker well' (34 characters)."
+      "problem": "Preview text claims a '100 % guarantee' and a vague unsupported benefit ('cleaner and lighter at work'). This breaks voice.md section 4.2 (no guaranteed results).",
+      "fix": "Replace with a plain, honest preview of 90 characters or fewer, e.g. 'A short look at how to assign, govern, and manage an AI Worker.'"
     },
     {
       "file": "campaigns/test-bad/emails/01-bad.md",
       "line": 4,
       "severity": "medium",
-      "problem": "The greeting 'Hello reader,' does not use {{first_name}}.",
-      "fix": "Use 'Hi {{first_name}},'."
+      "problem": "Greeting is 'Hello reader,' and does not use {{first_name}}.",
+      "fix": "Change to 'Hi {{first_name}},'."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 6,
+      "severity": "high",
+      "problem": "Claims a '100 % guarantee' that the reader will 'become an expert and earn more'. This breaks voice.md section 4.1 (no income outcomes) and 4.2 (no guaranteed results or expertise).",
+      "fix": "Remove both claims. Say plainly what the book teaches: how to assign, govern, and manage an AI Worker."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 8,
+      "severity": "high",
+      "problem": "'Don't get left behind' is a fear and pressure phrase (voice.md section 3). 'Only a few copies left!' is fake scarcity (section 4.6).",
+      "fix": "Delete the whole line."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 10,
+      "severity": "high",
+      "problem": "The '[Buy now](https://example.com/buy)' link is a second main link with the wrong address. The rules allow exactly one button link, to https://agentfactory2.panaversity.org/five-horizons.",
+      "fix": "Remove it. Keep one button link to the five-horizons address, with button text that is not 'Read the introduction'."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 11,
+      "severity": "medium",
+      "problem": "The 'Read more' button is the only valid main link, but it has no sign-off link after it. Two calls to action also appear together (voice.md section 5 allows one).",
+      "fix": "Keep one fitting button, e.g. 'See the five horizons'. Add the sign-off link 'Read the introduction' separately in the sign-off."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 13,
+      "severity": "medium",
+      "problem": "Sign-off is incomplete. It is missing the closing line 'Start with Horizon 1. Learn to manage one AI Worker well.' and the 'Read the introduction: https://agentfactory2.panaversity.org/five-horizons' line.",
+      "fix": "Use the full sign-off from voice.md section 5."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 14,
+      "severity": "medium",
+      "problem": "The required two-line plain-text footer is missing (waitlist line, {{company_address}}, {{unsubscribe_url}}).",
+      "fix": "Add after the sign-off: 'You're getting this because you joined the agentfactory2.panaversity.org waitlist.' then 'agentfactory2.panaversity.org, {{company_address}} · Unsubscribe: {{unsubscribe_url}}' on its own line."
     }
   ]
 }

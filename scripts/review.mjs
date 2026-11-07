@@ -1,6 +1,6 @@
 // Usage: node scripts/review.mjs <campaign-folder>
 // Runs Claude Code headless, saves review/findings.json, exits 1 on any high finding.
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 
 const folder = process.argv[2];
@@ -10,7 +10,22 @@ if (!folder) {
 }
 
 const schema = readFileSync("review/findings.schema.json", "utf8");
-const prompt = `Review every email in ${folder} against brand/voice.md and .claude/rules/emails.md. Report only real problems.`;
+let prompt = `Review every email in ${folder} against brand/voice.md and .claude/rules/emails.md. Report only real problems.`;
+
+// If the last review was for this same folder, tell Claude what it already found.
+const FINDINGS_PATH = "review/findings.json";
+if (existsSync(FINDINGS_PATH)) {
+  try {
+    const previous = JSON.parse(readFileSync(FINDINGS_PATH, "utf8"));
+    if (previous.folder === folder && Array.isArray(previous.findings)) {
+      prompt +=
+        `\n\nEarlier findings:\n${JSON.stringify(previous.findings, null, 2)}\n\n` +
+        "These are findings from the last review. Report only problems that are new or still not fixed. Don't repeat ones that have been fixed.";
+    }
+  } catch {
+    // An unreadable old file just means a fresh review.
+  }
+}
 
 const run = spawnSync(
   "claude",
@@ -39,7 +54,7 @@ if (!data || !Array.isArray(data.findings)) {
   process.exit(2);
 }
 
-writeFileSync("review/findings.json", JSON.stringify(data, null, 2) + "\n");
+writeFileSync(FINDINGS_PATH, JSON.stringify({ folder, findings: data.findings }, null, 2) + "\n");
 
 const count = (s) => data.findings.filter((f) => f.severity === s).length;
 const high = count("high");

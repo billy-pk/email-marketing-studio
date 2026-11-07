@@ -34,7 +34,10 @@ const run = spawnSync(
 );
 
 if (run.error || run.status !== 0) {
-  console.error("claude failed:", run.error?.message ?? run.stderr);
+  console.error(
+    `claude failed (exit ${run.status}):`,
+    run.error?.message ?? [run.stderr, run.stdout].filter(Boolean).join("\n"),
+  );
   process.exit(2);
 }
 
